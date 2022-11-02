@@ -23,7 +23,7 @@ public class RestController {
 	private UserRepository userRepository;
 	
 	@PostMapping(path="/add")
-	@ResponseBody
+	@ResponseBody //TODO MOVE THIS BUSINESS LOGIC IN A SERVICE
 	public String addUser(
 			@RequestParam String name,
 			@RequestParam String surname,
