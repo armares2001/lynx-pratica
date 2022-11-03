@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import lombok.Data;
 @Entity
 @Data
-@Table
+@Table //TODO add table name
 public class Book {
 	
 	@Id
