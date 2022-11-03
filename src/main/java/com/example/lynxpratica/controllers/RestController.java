@@ -1,18 +1,13 @@
 package com.example.lynxpratica.controllers;
 
-import java.sql.Date;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
-
+import java.math.BigDecimal;
+import java.security.PublicKey;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.lynxpratica.entities.User;
-import com.example.lynxpratica.repositories.UserRepository;
+import com.example.lynxpratica.services.UserService;
 
 
 
@@ -20,30 +15,29 @@ import com.example.lynxpratica.repositories.UserRepository;
 public class RestController {
 	
 	@Autowired
-	private UserRepository userRepository;
+	private UserService userService;
 	
-	@PostMapping(path="/add")
-	@ResponseBody //TODO MOVE THIS BUSINESS LOGIC IN A SERVICE
-	public String addUser(
+	@PostMapping(path="/add") public String add(
 			@RequestParam String name,
 			@RequestParam String surname,
 			@RequestParam String adress,
-			@RequestParam String birthDate
+			@RequestParam String birthDate) {
+		
+		return userService.addUser(name,surname,adress,birthDate);
+	}
+	
+	@PostMapping(path="/addBook")
+	public String newBook(
+			@RequestParam String title,
+			@RequestParam String author,
+			@RequestParam BigDecimal price,
+			@RequestParam Integer stock,
+			@RequestParam String category
 			) {
 		
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/yyyy");
-		LocalDate date = LocalDate.parse(birthDate, formatter);
-		java.util.Date date1 = Date.from(date.atStartOfDay(ZoneId.systemDefault()).toInstant());
 		
-		User n = new User();
-		n.setName(name);
-		n.setSurname(surname);
-		n.setAdress(adress);
-		n.setBirthDate(date1);
-		userRepository.save(n);
 		
-		return "Utente salvato con successo!";
-		
+		return "Libro inserito con successo!";
 	}
 
 }

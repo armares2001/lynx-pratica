@@ -1,13 +1,13 @@
 package com.example.lynxpratica.entities;
 
-import java.math.BigDecimal;
-import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -16,29 +16,21 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="users")
+@Table(name="category")
 @Data
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
-
+public class Category {
+	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	
-	@Column(name="name")
+	@Column(name="category")
 	private String name;
 	
-	@Column(name="surname")
-	private String surname;
-	
-	@Column(name="adress")
-	private String adress;
-	
-	@Column(name="birth")
-	private Date birthDate;
-	
-	@Column(name="bank_account")
-	private BigDecimal bankAccount;
+	@OneToMany(mappedBy = "category")
+	private List<Book> book;
+
 }
