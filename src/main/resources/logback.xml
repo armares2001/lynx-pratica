@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration>
+<configuration>	
+	<!-- Appender su CONSOLE -->
+  	<appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+    	<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      		<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    	</encoder>
+  	</appender>
+  	<!-- Appender su FILE -->
+	<appender name="File" class="ch.qos.logback.core.FileAppender" >
+		<file>./logs/RestController.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      		<pattern>%d %p %c{1.} [%t] %m%n</pattern>
+    	</encoder>
+    </appender>
+    
+    <appender name="Initializing" class="ch.qos.logback.core.FileAppender" >
+		<file>./logs/InitializingApp.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      		<pattern>%d %p %c{1.} [%t] %m%n</pattern>
+    	</encoder>
+    </appender>
+
+	<!-- LOGGER -->
+	<logger name="com.example.lynxpratica.controllers.RestController" level="debug" additivity="false">
+		<appender-ref ref="File"/>
+		<appender-ref ref="Console"/>
+	</logger>
+
+  	<root level="info">
+	    <appender-ref ref="Console"/>
+	    <appender-ref ref="Initializing"/>
+  	</root>
+</configuration>
