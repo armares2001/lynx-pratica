@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -24,13 +25,16 @@ import lombok.NoArgsConstructor;
 public class Category {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name="category")
+	@Column(name="category", length = 10)
 	private String name;
 	
-	@OneToMany(mappedBy = "category")
+	@Column(name= "is_enabled")
+	private Boolean isEnabled;
+	
+	@OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
 	private List<Book> book;
 
 }

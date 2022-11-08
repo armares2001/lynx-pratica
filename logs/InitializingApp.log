@@ -1,0 +1,22 @@
+2022-11-07 18:20:57,075 INFO com.example.lynxpratica.LynxPraticaApplication [main] Starting LynxPraticaApplication using Java 19 on HW001318 with PID 13648 (C:\Users\vincenzo.ventriglia\lynx-pratica\target\classes started by vincenzo.ventriglia in C:\Users\vincenzo.ventriglia\lynx-pratica)
+2022-11-07 18:20:57,080 INFO com.example.lynxpratica.LynxPraticaApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-07 18:20:58,034 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-07 18:20:58,128 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+2022-11-07 18:20:58,836 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-11-07 18:20:58,848 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-11-07 18:20:58,849 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-11-07 18:20:58,849 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-07 18:20:59,120 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-11-07 18:20:59,121 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1951 ms
+2022-11-07 18:20:59,362 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-07 18:20:59,433 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-07 18:20:59,658 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-07 18:20:59,801 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-07 18:21:00,246 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-07 18:21:00,288 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-11-07 18:21:01,327 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-07 18:21:01,339 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-07 18:21:01,930 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-07 18:21:02,453 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-11-07 18:21:02,521 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-07 18:21:02,533 INFO com.example.lynxpratica.LynxPraticaApplication [main] Started LynxPraticaApplication in 5.962 seconds (JVM running for 7.616)
