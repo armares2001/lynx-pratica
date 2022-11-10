@@ -1,0 +1,15 @@
+2022-11-09 16:53:02,388 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-10] ADDED NEW USER WITH NAME: paolo, SURNAME: bonolis, ADRESS: boh, BIRTHDAY: 14
+2022-11-09 16:53:09,865 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-3] ADDED NEW USER WITH NAME: paolo, SURNAME: bonolis, ADRESS: boh, BIRTHDAY: pollo
+2022-11-09 16:54:56,451 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-5] ADDED NEW USER WITH NAME: paolo, SURNAME: bonolis, ADRESS: boh, BIRTHDAY: 14/8/2002
+2022-11-09 17:00:25,640 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-8] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 17:03:10,331 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-3] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 17:06:56,994 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-2] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 17:09:50,677 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-3] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 17:12:52,315 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-1] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 17:15:54,246 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-4] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 17:19:17,546 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-1] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 17:21:56,863 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-7] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 17:49:48,799 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-2] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 17:51:00,148 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-5] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 18:20:29,825 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-1] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo
+2022-11-09 18:21:11,170 INFO com.example.lynxpratica.controllers.RestController [http-nio-8081-exec-7] THE USER WITH NAME: paolo BOUGTH A BOOK WITH NAME: ollo

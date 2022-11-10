@@ -85,13 +85,14 @@ public class RestController {
 		return userService.wishList(id, idBook);
 	}
 
-	@PutMapping(path = "/buy/{id}/{idBook}")
+	@PutMapping(path = "/buy/{id}/{idBook}/{orderSize}")
 	public String buyBook(
 		@PathVariable("id") Integer id,
-		@PathVariable("idBook") Integer idBook
+		@PathVariable("idBook") Integer idBook,
+		@PathVariable("orderSize") Integer orderSize
 	) {
 		logger.info("THE USER WITH NAME: " + userService.getUser(id).getName().toString()+ " BOUGTH A BOOK WITH NAME: "+bookService.getBook(idBook).getTitle().toString());
-		return userService.buyBook(id, idBook);
+		return userService.buyBook(id, idBook,orderSize);
 	}
 
 	@DeleteMapping(path = "/delete/{idBook}")
